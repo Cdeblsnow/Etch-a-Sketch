@@ -1,4 +1,9 @@
 const container = document.querySelector("#container");
+const initialCanvas= firstCanvas();
+let userWidth=0;
+let userHeight=0;
+
+function firstCanvas(){
     for(let i = 1; i < 257; i++){
         const square = document.createElement("div");
         square.className = "cube";
@@ -6,3 +11,4 @@ const container = document.querySelector("#container");
 
         container.appendChild(square);
     }
+}
