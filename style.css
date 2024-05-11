@@ -6,24 +6,20 @@
     margin: auto;
     align-content: flex-start;
     border: 5px black solid;
-    padding-top: 10%;
+    
 }
 
 
 .cube{
     background-color: white;
-    outline: 5px;
-    width: 3%;/*25px*/
-    height: 3%;
+    border: 1px;
+    width: calc(800px/17);
+    height: calc(800px/16.65);
     border-color: black;
     border-style: solid;
-    
+    flex-grow: 1;  
 }
 
-#container>.cube:nth-child(16n + 1) {
-    
-    margin-left: 20%;
-  }
 
  
   
