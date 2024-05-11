@@ -1,14 +1,26 @@
+div{
+    display: flex;
+}
+
 #container {
     display: flex;
     width: 800px;
     height: 800px;
     flex-wrap: wrap;
-    margin: auto;
+    margin-left: auto;
     align-content: flex-start;
     border: 5px black solid;
     
 }
 
+#newCanvas{
+    flex-grow: 0;
+    height: 50px;
+    width: 90px;
+    margin-left: 50px;
+    margin-right: auto;
+    margin-top: 20px;
+}
 
 .cube{
     background-color: white;
@@ -19,6 +31,7 @@
     border-style: solid;
     flex-grow: 1;  
 }
+
 
 
  
