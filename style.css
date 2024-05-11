@@ -10,6 +10,7 @@ div{
     margin-left: auto;
     align-content: flex-start;
     border: 5px black solid;
+    box-sizing: border-box;
     
 }
 
@@ -25,11 +26,23 @@ div{
 .cube{
     background-color: white;
     border: 1px;
-    width: calc(800px/17);
-    height: calc(800px/16.65);
+    width: calc(100%/16);
+    height: calc(100%/16);
     border-color: black;
     border-style: solid;
-    flex-grow: 1;  
+    box-sizing: border-box;
+    flex: auto;
+}
+
+.cubejs{
+    background-color: white;
+    border: 1px;
+    width: calc(100%/ var(--widthInput));
+    height: calc(100%/var(--heightInput));
+    border-color: black;
+    border-style: solid;
+    box-sizing: border-box;
+    flex: auto; 
 }
 
 
