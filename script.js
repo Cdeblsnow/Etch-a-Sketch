@@ -8,6 +8,8 @@ function firstCanvas(){
         const square = document.createElement("div");
         square.className = "cube";
         square.textContent = i ;
+        square.addEventListener("mouseenter", function( event ) {   
+            event.target.style.background = "purple";});
 
         container.appendChild(square);
     }
