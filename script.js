@@ -5,7 +5,11 @@ let userInput=0;
         const square = document.createElement("div");
         square.className = "cube";
         square.addEventListener("mouseenter", function( event ) {   
-            event.target.style.background = "purple";});
+                        let R = Math. floor(Math. random() * 256);
+                        let G = Math. floor(Math. random() * 256);
+                        let B = Math. floor(Math. random() * 256);  
+                        let rbgColor = "rgb(" + R + "," + G + "," + B + ")";
+                        event.target.style.background = rbgColor;});
 
         container.appendChild(square);
     }
@@ -23,8 +27,12 @@ function userCanvas(){
                     square.className = "cubejs";
                     square.style.setProperty("--widthInput", +userInput);
                     square.style.setProperty("--heightInput", +userInput);
-                    square.addEventListener("mouseenter", function( event ) {   
-                        event.target.style.background = "purple";});
+                    square.addEventListener("mouseenter", function( event ) { 
+                        let R = Math. floor(Math. random() * 256);
+                        let G = Math. floor(Math. random() * 256);
+                        let B = Math. floor(Math. random() * 256);  
+                        let rbgColor = "rgb(" + R + "," + G + "," + B + ")";
+                        event.target.style.background = rbgColor;});
             
                     container.appendChild(square);
                 }

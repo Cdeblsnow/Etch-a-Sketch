@@ -9,8 +9,10 @@ div{
     flex-wrap: wrap;
     margin-left: auto;
     align-content: flex-start;
-    border: 5px black solid;
+    border: 8px black solid;
+    border-radius: 5px;
     box-sizing: border-box;
+    
     
 }
 
